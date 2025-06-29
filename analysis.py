@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 AWS_REGION = os.environ.get('AWS-REGION',"us-east-1")
-DYNAMODB_TABLE = os.getenv("DYNAMODB_TABLE", 'DEV_TABLE')
+DYNAMODB_TABLE = os.getenv("DYNAMODB_TABLE", 'PROD_TABLE')')
 S3_BUCKET_NAME = 'pixel-rekog-cicd'
 
 s3 = boto3.client('s3', region_name=AWS_REGION)
