@@ -46,7 +46,7 @@ def image_analysis():
            }
         )
 
-        print(f"Labels for {filename} stored in DynamoDB table {DYNAMODB_TABLE}\N.")
+        print(f"Labels for {filename} stored in DynamoDB table {DYNAMODB_TABLE}\n")
 
 if __name__ == "__main__":
     image_analysis()            
